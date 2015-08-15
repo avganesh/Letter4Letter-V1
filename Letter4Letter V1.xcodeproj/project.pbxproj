@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1709EEB81B7C47CD00177763 /* rightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1709EEB71B7C47CC00177763 /* rightArrow.png */; };
+		1709EEBA1B7C486800177763 /* leftArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1709EEB91B7C486800177763 /* leftArrow.png */; };
 		1733E9DE1B74389B000D99D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1733E9DD1B74389B000D99D0 /* AppDelegate.swift */; };
 		1733E9E01B74389B000D99D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1733E9DF1B74389B000D99D0 /* ViewController.swift */; };
 		1733E9E31B74389B000D99D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1733E9E11B74389B000D99D0 /* Main.storyboard */; };
 		1733E9E51B74389B000D99D0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1733E9E41B74389B000D99D0 /* Images.xcassets */; };
 		1733E9E81B74389B000D99D0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1733E9E61B74389B000D99D0 /* LaunchScreen.xib */; };
 		1733E9F41B74389B000D99D0 /* Letter4Letter_V1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1733E9F31B74389B000D99D0 /* Letter4Letter_V1Tests.swift */; };
+		17408B8A1B7C609000850355 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17408B891B7C609000850355 /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1709EEB71B7C47CC00177763 /* rightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rightArrow.png; sourceTree = "<group>"; };
+		1709EEB91B7C486800177763 /* leftArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftArrow.png; sourceTree = "<group>"; };
 		1733E9D81B74389B000D99D0 /* Letter4Letter V1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Letter4Letter V1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1733E9DC1B74389B000D99D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1733E9DD1B74389B000D99D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +41,7 @@
 		1733E9ED1B74389B000D99D0 /* Letter4Letter V1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Letter4Letter V1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1733E9F21B74389B000D99D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1733E9F31B74389B000D99D0 /* Letter4Letter_V1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Letter4Letter_V1Tests.swift; sourceTree = "<group>"; };
+		17408B891B7C609000850355 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,8 @@
 				1733E9DA1B74389B000D99D0 /* Letter4Letter V1 */,
 				1733E9F01B74389B000D99D0 /* Letter4Letter V1Tests */,
 				1733E9D91B74389B000D99D0 /* Products */,
+				1709EEB71B7C47CC00177763 /* rightArrow.png */,
+				1709EEB91B7C486800177763 /* leftArrow.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +87,7 @@
 			children = (
 				1733E9DD1B74389B000D99D0 /* AppDelegate.swift */,
 				1733E9DF1B74389B000D99D0 /* ViewController.swift */,
+				17408B891B7C609000850355 /* ViewController2.swift */,
 				1733E9E11B74389B000D99D0 /* Main.storyboard */,
 				1733E9E41B74389B000D99D0 /* Images.xcassets */,
 				1733E9E61B74389B000D99D0 /* LaunchScreen.xib */,
@@ -194,6 +203,8 @@
 			files = (
 				1733E9E31B74389B000D99D0 /* Main.storyboard in Resources */,
 				1733E9E81B74389B000D99D0 /* LaunchScreen.xib in Resources */,
+				1709EEBA1B7C486800177763 /* leftArrow.png in Resources */,
+				1709EEB81B7C47CD00177763 /* rightArrow.png in Resources */,
 				1733E9E51B74389B000D99D0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +225,7 @@
 			files = (
 				1733E9E01B74389B000D99D0 /* ViewController.swift in Sources */,
 				1733E9DE1B74389B000D99D0 /* AppDelegate.swift in Sources */,
+				17408B8A1B7C609000850355 /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +419,7 @@
 				1733E9F91B74389B000D99D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1733E9FA1B74389B000D99D0 /* Build configuration list for PBXNativeTarget "Letter4Letter V1Tests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +428,7 @@
 				1733E9FC1B74389B000D99D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
