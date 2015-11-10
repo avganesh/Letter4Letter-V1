@@ -40,7 +40,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         let range = NSMakeRange(0, currentWord.length)
         
-        let misspelledRange = checker.rangeOfMisspelledWordInString(currentWord, range: range, startingAt: 0, wrap: false, language: "en")
+        let misspelledRange = checker.rangeOfMisspelledWordInString(currentWord as String, range: range, startingAt: 0, wrap: false, language: "en")
         
         return misspelledRange.location == NSNotFound
         
@@ -68,13 +68,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
             
             pOneScore++
             
-            println(pOneScore)
+            print(pOneScore)
             
         } else {
             
             pTwoScore++
             
-            println(pTwoScore)
+            print(pTwoScore)
             
         }
         
@@ -98,16 +98,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
     //adds entered letter to the left of gameWord
     @IBAction func addLeft(sender: AnyObject) {
         
-        let enteredLetters = NSString(string: enteredLetter.text)
+        let enteredLetters = NSString(string: enteredLetter.text!)
         
         if enteredLetters.length == 1 {
         
         //clears big blue message and adds left
         returnIfWord.text = ""
         
-        gameWord = enteredLetter.text! + gameWord
+        gameWord = enteredLetter.text! + (gameWord as String)
         
-        wordSoFar.text = gameWord
+        wordSoFar.text = gameWord as String
         
         //if statement to update Player tracker
         updatePlayerTracker()
@@ -139,16 +139,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
     //adds entered letter to the right of gameWord
     @IBAction func addRight(sender: AnyObject) {
         
-        let enteredLetters = NSString(string: enteredLetter.text)
+        let enteredLetters = NSString(string: enteredLetter.text!)
         
         if enteredLetters.length == 1 {
             
         //clears big blue message
         returnIfWord.text = ""
         
-        gameWord = gameWord + enteredLetter.text!
+        gameWord = (gameWord as String) + enteredLetter.text!
         
-        wordSoFar.text = gameWord
+        wordSoFar.text = gameWord as String
         
         //if statement to update Player tracker
         updatePlayerTracker()
@@ -191,16 +191,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
     //Player hits GO to submit the word they have in mind
     @IBAction func challengeChecker(sender: AnyObject) {
         
-        let theWord = NSString(string: enteredLetter.text)
+        let theWord = NSString(string: enteredLetter.text!)
         
         //checks if entered work is real and includes the gameWord
-        if isWordReal(theWord) && theWord.containsString(gameWord) {
+        if isWordReal(theWord) && theWord.containsString(gameWord as String) {
             
             returnIfWord.text = playerName.text! + " Wins!"
             
-            gameWord = enteredLetter.text
+            gameWord = enteredLetter.text!
             
-            wordSoFar.text = gameWord
+            wordSoFar.text = gameWord as String
             
             enteredLetter.text = ""
             
@@ -249,14 +249,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         
         self.view.endEditing(true)
         
     }
     
     
-    func textFieldShouldReturn(textField: UITextField!) -> Bool {
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
         
         textField.resignFirstResponder()
         
